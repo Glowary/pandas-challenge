@@ -52,12 +52,15 @@ then `.groupby()` `school_name` and take the mean of the `math_score` column for
 each. Then combine them into one DataFrame.  
 > 7. Find the Scores by School Spending, Scores by School Size, and Scores by School 
 Type by first establishing the bins, finding the averages, and then using `pd.cut` to 
-categorize spending based on the bins. AskBCS Learning Assistant suggested 
-`pd.cut(per_school_capita, spending_bins, labels=spending_labels, right=False)`. Finally, 
-assembling into a DataFrame.  
+categorize spending based on the bins. AskBCS Learning Assistant suggested, then, assembled into a DataFrame.  
+The below code needs to be written with the `right` parameter, due to the value of `bin` being intervals.
+>  
+>> `pd.cut(per_school_capita, spending_bins, labels=spending_labels, right=False)`. 
+>  
+
 This data suggests that school type, per-student budget, and size affect academic 
-performance. Specifically, charter schools perform better than district schools, lower per-
-student budgets improve performance, and smaller schools perform better.  
+performance. Specifically, charter schools perform better than district schools, lower per-student 
+budgets improve performance, and smaller schools perform better.  
 
 ## External Links:
 [Unique values](https://sparkbyexamples.com/python/pandas-count-unique-values-in-column/)  
